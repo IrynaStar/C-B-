@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    int a, b, c;
+    
+    setlocale(0, "");
+    cout << "Введиде значение а: ";
+    cin >> a;
+    cout << "Введиде значение b (степень): ";
+    cin >> b;
+
+    int* pa = &a;
+    int* pb = &b;
+
+    //cout << *pa << '\n' << *pb << '\n';
+    c = pow(*pa, *pb);
+    cout << "А в степени b = " << c;
+
+    return 0;
+}
